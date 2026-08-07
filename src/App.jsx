@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Paragrafo from './Paragrafo'
+import CaixaTexto from './CaixaTexto'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -33,6 +34,8 @@ function App() {
           <Paragrafo nome="Fulano"/>
           <Paragrafo nome="Beltrano"/>
           <Paragrafo nome="Ciclano"/>
+
+          <CaixaTexto/>
       </section>
 
       <div className="ticks"></div>
