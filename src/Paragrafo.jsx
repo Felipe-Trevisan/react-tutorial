@@ -8,7 +8,7 @@ const Paragrafo = (props) => {
     }
 
     const diminuirPontos = () => {
-        if(setPontos > 0)
+        if(pontos > 0)
             setPontos(pontos - 1);
     }
 
