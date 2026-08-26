@@ -1,4 +1,4 @@
-import TarefasItem from "./TarefasItem";
+import TarefasItem from "./pages/Tarefas/TarefasItem";
 
 const TarefasLista = ({tarefas, onEditTarefa, onDeleteTarefa}) =>{
     return(
