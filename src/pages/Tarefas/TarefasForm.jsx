@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState } from "react"
 
-const TarefasForm = ({onAddTarefa})=> {
-    const [tarefa, setTarefa] = useState('');
+const TarefasForm = ({ onAddTarefa }) => {
+    const [tarefa, setTarefa] = useState('')
 
     const handleSubmit = (e) =>{
-        e.preventDefault();
+        e.preventDefault()
         if(tarefa.trim()){
             onAddTarefa(tarefa.trim())
             setTarefa('');
@@ -12,11 +12,10 @@ const TarefasForm = ({onAddTarefa})=> {
     }
 
     return (
-        <form action="" onSubmit={handleSubmit}>
-            <input type="text" value={tarefa} placeholder="Digite sua Tarefa" onChange={(e) =>{ setTarefa(e.target.value) }} />
+        <form onSubmit={handleSubmit}>
+            <input type="text" value={tarefa} placeholder="Digiter sua tarefa" onChange={(e) => {setTarefa(e.target.value)}}/>
             <button type="submit">Adicionar</button>
         </form>
-    );
+    )
 }
-
-export default TarefasForm;
+export default TarefasForm
